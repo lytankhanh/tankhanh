@@ -1,0 +1,1909 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- Font awesome -->
+    <link href="~/Content/NguoiDungCssLayout/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="~/Content/NguoiDungCssLayout/css/bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="~/Content/NguoiDungCssLayout/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="~/Content/NguoiDungCssLayout/css/jquery.simpleLens.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="~/Content/NguoiDungCssLayout/css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="~/Content/NguoiDungCssLayout/css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="~/Content/NguoiDungCssLayout/css/theme-color/default-theme.css" rel="stylesheet">
+    <!-- <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet"> -->
+    <!-- Top Slider CSS -->
+    <link href="~/Content/NguoiDungCssLayout/css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+
+    <!-- Main style sheet -->
+    <link href="~/Content/NguoiDungCssLayout/css/style.css" rel="stylesheet">
+</head>
+<body>
+    @RenderBody()
+    <div id="ToanTrang">
+        <!-- wpf loader Two -->
+        <div id="wpf-loader-two">
+            <div class="wpf-loader-two-inner">
+                <span>Loading</span>
+            </div>
+        </div>
+        <!-- / wpf loader Two -->
+        <!-- SCROLL TOP BUTTON -->
+        <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+        <!-- END SCROLL TOP BUTTON -->
+        <!-- Start header section -->
+        <header id="aa-header">
+            <!-- start header top  -->
+            <div class="aa-header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="aa-header-top-area">
+                                <!-- start header top left -->
+                                <div class="aa-header-top-left">
+                                    <!-- start language -->
+                                    <div class="aa-language">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <img src="~/Content/NguoiDungCssLayout/img/flag/anh.png" alt="cờ nước anh">ENGLISH
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/vietnam.png" alt="">TIẾNG VIỆT</a></li>
+                                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/anh.png" alt="">ENGLISH</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- / language -->
+                                    <!-- start currency -->
+                                    <div class="aa-currency">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <i class="fa fa-usd"></i>USD
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
+                                                <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- / currency -->
+                                    <!-- start cellphone -->
+                                    <div class="cellphone hidden-xs">
+                                        <p><span class="fa fa-phone"></span>0385962262</p>
+                                    </div>
+                                    <!-- / cellphone -->
+                                </div>
+                                <!-- / header top left -->
+                                <div class="aa-header-top-right">
+                                    <ul class="aa-head-top-nav-right">
+                                        <li><a href="account.html">Tài Khoản</a></li>
+                                        <li class="hidden-xs"><a href="cart.html">Giỏ hàng</a></li>
+                                        <li class="hidden-xs"><a href="checkout.html">Kiểm Tra</a></li>
+                                        <li><a href="" data-toggle="modal" data-target="#login-modal">Đăng nhập</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / header top  -->
+            <!-- start header bottom  -->
+            <div class="aa-header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="aa-header-bottom-area">
+                                <!-- logo  -->
+                                <div class="aa-logo">
+                                    <!-- Text based logo -->
+                                    <a href="index.html">
+                                        <span class="fa fa-shopping-cart"></span>
+                                        <p>Tấn Khanh<strong>Travel</strong> <span>CTY CP DV-TM Du Lịch Tấn Khanh</span></p>
+                                    </a>
+                                    <!-- img based logo -->
+                                    <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                                </div>
+                                <!-- / logo  -->
+                                <!-- cart box -->
+                                <div class="aa-cartbox">
+                                    <a class="aa-cart-link" href="#">
+                                        <span class="fa fa-shopping-basket"></span>
+                                        <span class="aa-cart-title">Giỏ Hàng</span>
+                                        <span class="aa-cart-notify">2</span>
+                                    </a>
+                                    <div class="aa-cartbox-summary">
+                                        <ul>
+                                            <li>
+                                                <a class="aa-cartbox-img" href="#"><img src="~/Content/NguoiDungCssLayout/img/cartbox/woman-small-2.jpg" alt="img"></a>
+                                                <div class="aa-cartbox-info">
+                                                    <h4><a href="#">Product Name</a></h4>
+                                                    <p>1 x $250</p>
+                                                </div>
+                                                <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="aa-cartbox-img" href="#"><img src="~/Content/NguoiDungCssLayout/img/cartbox/woman-small-1.jpg" alt="img"></a>
+                                                <div class="aa-cartbox-info">
+                                                    <h4><a href="#">Product Name</a></h4>
+                                                    <p>1 x $250</p>
+                                                </div>
+                                                <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                                            </li>
+                                            <li>
+                                                <span class="aa-cartbox-total-title">
+                                                    Total
+                                                </span>
+                                                <span class="aa-cartbox-total-price">
+                                                    $500
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
+                                    </div>
+                                </div>
+                                <!-- / cart box -->
+                                <!-- search box -->
+                                <div class="aa-search-box">
+                                    <form action="">
+                                        <input type="text" name="" id="" placeholder="Tìm kiếm từ khóa..... ">
+                                        <button type="submit"><span class="fa fa-search"></span></button>
+                                    </form>
+                                </div>
+                                <!-- / search box -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / header bottom  -->
+        </header>
+        <!-- / header section -->
+        <!-- menu -->
+        <section id="menu">
+            <div class="container">
+                <div class="menu-area">
+                    <!-- Navbar -->
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <!-- Left nav -->
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Trang Chủ</a></li>
+                                <li>
+                                    <a href="#">Du Lịch Trong Nước<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Du lịch Miền Bắc</a></li>
+                                        <li><a href="#">Du lịch Miền Nam</a></li>
+                                        <li><a href="#">Du lịch Miền Trung</a></li>
+                                        <li><a href="#">Chùm Tour Nghỉ Lễ</a></li>                                      
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Du Lịch Nước Ngoài<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Du lịch Châu Á</a></li>
+                                        <li><a href="#">Du lịch Châu Âu</a></li>
+                                        <li><a href="#">Du lịch Châu Mỹ</a></li>
+                                        <li><a href="#">Du lịch Châu Úc</a></li>
+                                        <li><a href="#">Du lịch Châu Phi</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Du Lịch Khách Đoàn<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Tổ Chức Sự Kiện</a></li>
+                                        <li><a href="#">Tour MICE</a></li>
+                                        <li><a href="#">Tổ Chức Teambuilding</a></li>
+                                        <li><a href="#">Tour đoàn thể</a></li>
+                                        <li><a href="#">Tour chuyên đề</a></li>
+                                        <li><a href="#">Tour gia đình</a></li>
+                                        <li><a href="#">Tour mới lạ</a></li>
+                                        <li><a href="#">Tour Caravan</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Du Lịch Tự Chọn</a></li>
+                                <li>
+                                    <a href="#">Làm Visa<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Visa Châu Á</a></li>
+                                        <li><a href="#">Visa Châu Âu</a></li>
+                                        <li><a href="#">Visa Châu Mỹ</a></li>
+                                        <li><a href="#">Visa Châu Úc</a></li>
+                                        <li><a href="#">Visa Châu Phi</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Xe Du Lịch<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Thuê xe theo chỗ</a></li>
+                                        <li><a href="#">Thuê xe theo yêu cầu</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / menu -->
+        <!-- Start slider -->
+        <section id="aa-slider">
+            <div class="aa-slider-area">
+                <div id="sequence" class="seq">
+                    <div class="seq-screen">
+                        <ul class="seq-canvas">
+                            <!-- single slide item -->
+                            <li>
+                                <div class="seq-model">
+                                    <img data-seq src="~/Content/NguoiDungCssLayout/img/slider/banner1.png" alt="Men slide img" />
+                                </div>
+                                <div class="seq-title">
+                                    <span data-seq>Tiết kiệm 10%</span>
+                                    <h2 data-seq>Du Lịch Châu Âu</h2>
+                                    <p data-seq>PHÁP - LUXEMBOURG - BỈ - HÀ LAN - ĐỨC</p>
+                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                                </div>
+                            </li>
+                            <!-- single slide item -->
+                            <li>
+                                <div class="seq-model">
+                                    <img data-seq src="~/Content/NguoiDungCssLayout/img/slider/banner2.jpg" alt="Wristwatch slide img" />
+                                </div>
+                                <div class="seq-title">
+                                    <span data-seq>Tiết kiệm 20%</span>
+                                    <h2 data-seq>Du Lịch Phú Quốc</h2>
+                                    <p data-seq>BÃI SAO - NHÀ TÙ PHÚ QUỐC - BÃI KHEM - DINH CẬU DINH BÀ</p>
+                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                                </div>
+                            </li>
+                            <!-- single slide item -->
+                            <li>
+                                <div class="seq-model">
+                                    <img data-seq src="~/Content/NguoiDungCssLayout/img/slider/banner3.jpg" alt="Women Jeans slide img" />
+                                </div>
+                                <div class="seq-title">
+                                    <span data-seq>Tiết kiệm 15%</span>
+                                    <h2 data-seq>Du Lịch Bình Định</h2>
+                                    <p data-seq>THỊ NẠI  –  KỲ CO – EO GIÓ </p>
+                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                                </div>
+                            </li>
+                            <!-- single slide item -->
+                            <li>
+                                <div class="seq-model">
+                                    <img data-seq src="~/Content/NguoiDungCssLayout/img/slider/banner4.png" alt="Shoes slide img" />
+                                </div>
+                                <div class="seq-title">
+                                    <span data-seq>Tiết kiệm 30%</span>
+                                    <h2 data-seq>Du Lịch Nha Trang</h2>
+                                    <p data-seq>VỊNH SANG HÔ - CHÙA LONG SƠN - NHÀ THỜ NÚI</p>
+                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                                </div>
+                            </li>
+                            <!-- single slide item -->
+                            <li>
+                                <div class="seq-model">
+                                    <img data-seq src="~/Content/NguoiDungCssLayout/img/slider/banner5.jpg"  alt="Male Female slide img" />
+                                </div>
+                                <div class="seq-title">
+                                    <span data-seq>Tiết kiệm 20%</span>
+                                    <h2 data-seq>Du Lịch Vũng Tàu</h2>
+                                    <p data-seq>BIỂN LONG HẢI - ĐỒI CON HEO - HỒ ĐÁ XANH - MŨI NGHINH PHONG</p>
+                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- slider navigation btn -->
+                    <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+                        <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+                        <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <!-- / slider -->
+        <!-- Start Promo section -->
+        <section id="aa-promo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-promo-area">
+                            <div class="row">
+                                <!-- promo left -->
+                                <div class="col-md-5 no-padding">
+                                    <div class="aa-promo-left">
+                                        <div class="aa-promo-banner">
+                                            <img src="~/Content/NguoiDungCssLayout/img/promo/da-lat.jpg" alt="img">
+                                            <div class="aa-prom-content">
+                                                <span>Sale 39%</span>
+                                                <h4><a href="#">Đà Lạt</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- promo right -->
+                                <div class="col-md-7 no-padding">
+                                    <div class="aa-promo-right">
+                                        <div class="aa-single-promo-right">
+                                            <div class="aa-promo-banner">
+                                                <img src="~/Content/NguoiDungCssLayout/img/promo/ly-son.jpg" alt="img">
+                                                <div class="aa-prom-content">
+                                                    <span>Sale 24%</span>
+                                                    <h4><a href="#">Quãng Ngãi</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="aa-single-promo-right">
+                                            <div class="aa-promo-banner">
+                                                <img src="~/Content/NguoiDungCssLayout/img/promo/mien-tay.jpg" alt="img">
+                                                <div class="aa-prom-content">
+                                                    <span>Sale 46%</span>
+                                                    <h4><a href="#">Miền Tây</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="aa-single-promo-right">
+                                            <div class="aa-promo-banner">
+                                                <img src="~/Content/NguoiDungCssLayout/img/promo/nhatrang.jpg" alt="img">
+                                                <div class="aa-prom-content">
+                                                    <span>Sale 43%</span>
+                                                    <h4><a href="#">Nha Trang</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="aa-single-promo-right">
+                                            <div class="aa-promo-banner">
+                                                <img src="~/Content/NguoiDungCssLayout/img/promo/quy-nhon.jpg" alt="img">
+                                                <div class="aa-prom-content">
+                                                    <span>Sale 35%</span>
+                                                    <h4><a href="#">Bình Định</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Promo section -->
+        <!-- Products section -->
+        <section id="aa-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="aa-product-area">
+                                <div class="aa-product-inner">
+                                    <!-- start prduct navigation -->
+                                    <ul class="nav nav-tabs aa-products-tab">
+                                        <li class="active"><a href="#men" data-toggle="tab">Du Lịch Miền Bắc</a></li>
+                                        <li><a href="#women" data-toggle="tab">Du Lịch Miền Trung</a></li>
+                                        <li><a href="#sports" data-toggle="tab">Du Lịch Miền Nam</a></li>
+                                        <li><a href="#electronics" data-toggle="tab">Du Lịch Tự Chọn</a></li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <!-- Start men product category -->
+                                        <div class="tab-pane fade in active" id="men">
+                                            <ul class="aa-product-catg">
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/du-lich-dong-bac_du-lich-viet.jpg"  alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lich Hà Giang-Quảng Bạ-Đồng Văn-Lũng Cú-Mèo</a></h4>
+                                                            <span class="aa-product-price">7,399,000đ</span><span class="aa-product-price"><del>8,599,00đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/du-lich-ha-noi-ha-giang-5-ngay.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Đông Bắc,Tour Hà Nội-Hà Giang-Đền Hùng</a></h4>
+                                                            <span class="aa-product-price">6,799,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/du-lich-he-dong-bac-ha-giang.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch hè Đông Bắc-Hà Giang</a></h4>
+                                                            <span class="aa-product-price">6,999,000đ</span><span class="aa-product-price"><del>7,699,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/du-lich-lao-cai-sapa.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Lào Cai-SaPa</a></h4>
+                                                            <span class="aa-product-price">5,599,00đ</span><span class="aa-product-price"><del>6,199,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/tour-du-lich-he-cao-bang-bac-kan.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch hè Đông Bắc-Bắc Kạn</a></h4>
+                                                            <span class="aa-product-price">6,899,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/tour-du-lich-he-ha-long.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch hè Hạ Long, Tour Hà Nội-Hạ Long-SaPa</a></h4>
+                                                            <span class="aa-product-price">5,999,000đ</span><span class="aa-product-price"><del>6,599,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/tour-du-lich-he-mai-chau-moc-chau.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch hè Tây Bắc-Mộc Châu-Sơn La-Điện Biên</a></h4>
+                                                            <span class="aa-product-price">8,199,000đ</span><span class="aa-product-price"><del>9,399,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/men/tour-du-lich-ninh-binh-mua-he.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Tràng An, Tour Hà Nội-Hạ Long</a></h4>
+                                                            <span class="aa-product-price">7,999,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                            </ul>
+                                            <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                        </div>
+                                        <!-- / men product category -->
+                                        <!-- start women product category -->
+                                        <div class="tab-pane fade" id="women">
+                                            <ul class="aa-product-catg">
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/du-lich-mien-trung-tour-dong-thien-duong-5-ngay.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Đà Nẵng - Hội An - Động Thiên Đường - 5 Ngày</a></h4>
+                                                            <span class="aa-product-price">5,799,000đ</span><span class="aa-product-price"><del>6,199,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/du-lich-nha-trang-dao-diep-son.jpg"  alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Nha Trang, Tour Đảo Điệp Sơn- Vinpearland- Nhà Thờ Đá - 3 ngày 3 đêm</a></h4>
+                                                            <span class="aa-product-price">2,799,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/du-lich-da-nang-hue-ho-truoi-bach-ma.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Đà Nẵng-Huế - Hồ Truồi - Bạch Mã - 4 Ngày</a></h4>
+                                                            <span class="aa-product-price">4,699,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/tour-quy-nhon-he.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour hè Quy Nhơn - Bình Định - 3 ngày 2 đêm</a></h4>
+                                                            <span class="aa-product-price">3,799,000đ</span><span class="aa-product-price"><del>4,299,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/tour-quang-binh-mua-he-2019.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Động Phong Nha - Quảng Bình - Đà Nẵng - Hội An - Huế - 5 ngày</a></h4>
+                                                            <span class="aa-product-price">5,499,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/du-lich-da-nang-he-2019.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Đà Nẵng, Tour Hội An - Huế - Động Thiên Đường - 4 ngày</a></h4>
+                                                            <span class="aa-product-price">5,299,999đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/du-lich-lao-dong-bac-thai.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Huế - Lào - Đông Bắc Thái Lan - 4 đêm</a></h4>
+                                                            <span class="aa-product-price">8,199,000đ</span><span class="aa-product-price"><del>8,799,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/women/du-lich-dao-binh-hung-ninh-chu.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Đảo Bình Hưng - Ninh Chữ - 3 ngày</a></h4>
+                                                            <span class="aa-product-price">2,199,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                            </ul>
+                                            <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                        </div>
+                                        <!-- / women product category -->
+                                        <!-- start sports product category -->
+                                        <div class="tab-pane fade" id="sports">
+                                            <ul class="aa-product-catg">
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/du-lich-phu-quoc.jpg"  alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Phú Quốc - 3 ngày</a></h4>
+                                                            <span class="aa-product-price">3,699,000đ</span><span class="aa-product-price"><del>4,199,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/du-lich-mien-tay-can-tho.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Miền Tây, Tour Mỹ Tho-Cần Thơ - 2 ngày</a></h4>
+                                                            <span class="aa-product-price">1,499,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/tour-du-lich-ca-mau.jpg"  alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Cà Mau - Bạc Liêu - Sóc Trăng - 2 ngày 2 đêm</a></h4>
+                                                            <span class="aa-product-price">1,799,000đ</span><span class="aa-product-price"><del>2,299,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/du-lich-chau-doc.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Châu Đốc - 2 ngày 2 đêm</a></h4>
+                                                            <span class="aa-product-price">1,699,000đ</span><span class="aa-product-price"><del>1,799,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/du-lich-soc-trang-con-dao.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Sóc Trăng- Cồn Mỹ Phước-Côn Đảo - 4 ngày</a></h4>
+                                                            <span class="aa-product-price">5,999,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/tour-hanh-huong-me.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du Lịch Bạc Liêu, Quan Âm Phạt Đài Mẹ Nam Hải - 1 ngày</a></h4>
+                                                            <span class="aa-product-price">899,000đ</span>  
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/tour-tat-muong-bat-ca-mien-tay.jpg" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch miền Tây, Tour Tát Mương Bắt Cá - 1 ngày</a></h4>
+                                                            <span class="aa-product-price">699,000đ</span><span class="aa-product-price"><del>899,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/sports/du-lich-dong-thap.jpg"  alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Du lịch Đồng Tháp- LÀng Hoa Sa Đéc- Vườn Quýt Hồng Lai Vung - 2 ngày</a></h4>
+                                                            <span class="aa-product-price">1,499,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- / sports product category -->
+                                        <!-- start electronic product category -->
+                                        <div class="tab-pane fade" id="electronics">
+                                            <ul class="aa-product-catg">
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lich da lat.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Đà Lạt- Combo cao cấp 4 sao tại Wonder Resort+ Xe Dcar</a></h4>
+                                                            <span class="aa-product-price">1,790,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lịch nha trang.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Nha Trang- Combo Deluxe 3 sao tại Luxury Nha Trang</a></h4>
+                                                            <span class="aa-product-price">2,250,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lịch phú quốc.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Phú Quốc- Combo đẳng cấp 5 sao tại Vinoasis Phú Quốc</a></h4>
+                                                            <span class="aa-product-price">3,590,000đ</span><span class="aa-product-price"><del>3,890,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lich nha trang.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Nha Trang- Combo đăng cấp 5 sao tại Vinpearl Discovery</a></h4>
+                                                            <span class="aa-product-price">3,290,000đ</span><span class="aa-product-price"><del>3,599,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lịch đà nẵng.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Đà Nẵng, Combo Deluxe 3 sao tại Grand Maliya</a></h4>
+                                                            <span class="aa-product-price">2,150,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lich da nang.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Đà Nẵng, Combo đẳng cấp 5 sao tại Vinpearl Condotel Riverfront</a></h4>
+                                                            <span class="aa-product-price">3,290,000đ</span><span class="aa-product-price"><del>3,590,000đ</del></span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lịch đà lạt2.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy Đà Lạt-Combo cao cấp 4 sao tại Sammy Hotel</a></h4>
+                                                            <span class="aa-product-price">2,890,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                </li>
+                                                <!-- start single product item -->
+                                                <li>
+                                                    <figure>
+                                                        <a class="aa-product-img" href="#">
+                                                            <img src="~/Content/NguoiDungCssLayout/img/electronics/du lịch maldevis.png" alt="polo shirt img">
+                                                        </a>
+                                                        <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Đặt Tour</a>
+                                                        <figcaption>
+                                                            <h4 class="aa-product-title"><a href="#">Tour Free & Easy- Thiên Đường du lịch Maldives- Resort đẳng cấp 4 sao</a></h4>
+                                                            <span class="aa-product-price">24,990,000đ</span>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="aa-product-hvr-content">
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                        <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                    </div>
+                                                    <!-- product badge -->
+                                                    <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                                </li>
+                                            </ul>
+                                            <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                        </div>
+                                        <!-- / electronic product category -->
+                                    </div>
+                                    <!-- quick view modal -->
+                                    <div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <div class="row">
+                                                        <!-- Modal view slider -->
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="aa-product-view-slider">
+                                                                <div class="simpleLens-gallery-container" id="demo-1">
+                                                                    <div class="simpleLens-container">
+                                                                        <div class="simpleLens-big-image-container">
+                                                                            <a class="simpleLens-lens-image" data-lens-image="img/view-slider/large/polo-shirt-1.png">
+                                                                                <img src="img/view-slider/medium/polo-shirt-1.png" class="simpleLens-big-image">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simpleLens-thumbnails-container">
+                                                                        <a href="#" class="simpleLens-thumbnail-wrapper"
+                                                                           data-lens-image="img/view-slider/large/polo-shirt-1.png"
+                                                                           data-big-image="img/view-slider/medium/polo-shirt-1.png">
+                                                                            <img src="img/view-slider/thumbnail/polo-shirt-1.png">
+                                                                        </a>
+                                                                        <a href="#" class="simpleLens-thumbnail-wrapper"
+                                                                           data-lens-image="img/view-slider/large/polo-shirt-3.png"
+                                                                           data-big-image="img/view-slider/medium/polo-shirt-3.png">
+                                                                            <img src="img/view-slider/thumbnail/polo-shirt-3.png">
+                                                                        </a>
+
+                                                                        <a href="#" class="simpleLens-thumbnail-wrapper"
+                                                                           data-lens-image="img/view-slider/large/polo-shirt-4.png"
+                                                                           data-big-image="img/view-slider/medium/polo-shirt-4.png">
+                                                                            <img src="img/view-slider/thumbnail/polo-shirt-4.png">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Modal view content -->
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="aa-product-view-content">
+                                                                <h3>T-Shirt</h3>
+                                                                <div class="aa-price-block">
+                                                                    <span class="aa-product-view-price">$34.99</span>
+                                                                    <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!</p>
+                                                                <h4>Size</h4>
+                                                                <div class="aa-prod-view-size">
+                                                                    <a href="#">S</a>
+                                                                    <a href="#">M</a>
+                                                                    <a href="#">L</a>
+                                                                    <a href="#">XL</a>
+                                                                </div>
+                                                                <div class="aa-prod-quantity">
+                                                                    <form action="">
+                                                                        <select name="" id="">
+                                                                            <option value="0" selected="1">1</option>
+                                                                            <option value="1">2</option>
+                                                                            <option value="2">3</option>
+                                                                            <option value="3">4</option>
+                                                                            <option value="4">5</option>
+                                                                            <option value="5">6</option>
+                                                                        </select>
+                                                                    </form>
+                                                                    <p class="aa-prod-category">
+                                                                        Category: <a href="#">Polo T-Shirt</a>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="aa-prod-view-bottom">
+                                                                    <a href="#" class="aa-add-to-cart-btn"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                                    <a href="#" class="aa-add-to-cart-btn">View Details</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- / quick view modal -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Products section -->
+        <!-- banner section -->
+        <section id="aa-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="aa-banner-area">
+                                <a href="#">
+                                    <img src="~/Content/NguoiDungCssLayout/img/cartbox/banner20.jpg" alt="fashion banner img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular section -->
+        <section id="aa-popular-category">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="aa-popular-category-area">
+                                <!-- start prduct navigation -->
+                                <ul class="nav nav-tabs aa-products-tab">
+                                    <li class="active"><a href="#popular" data-toggle="tab">Tour Trong Nước</a></li>
+                                    <li><a href="#featured" data-toggle="tab">Tour Nước Ngoài</a></li>
+                                    <li><a href="#latest" data-toggle="tab">Tour Đang Hót</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <!-- Start men popular category -->
+                                    <div class="tab-pane fade in active" id="popular">
+                                        <ul class="aa-product-catg aa-popular-slider">
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-2.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-2.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/t-shirt-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                </figure>
+                                                <figcaption>
+                                                    <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                                                    <span class="aa-product-price">$45.50</span>
+                                                </figcaption>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-3.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-4.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-4.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                            </li>
+                                        </ul>
+                                        <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                    </div>
+                                    <!-- / popular product category -->
+                                    <!-- start featured product category -->
+                                    <div class="tab-pane fade" id="featured">
+                                        <ul class="aa-product-catg aa-featured-slider">
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-2.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-2.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/t-shirt-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                </figure>
+                                                <figcaption>
+                                                    <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                                                    <span class="aa-product-price">$45.50</span>
+                                                </figcaption>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-3.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-4.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-4.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                            </li>
+                                        </ul>
+                                        <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                    </div>
+                                    <!-- / featured product category -->
+                                    <!-- start latest product category -->
+                                    <div class="tab-pane fade" id="latest">
+                                        <ul class="aa-product-catg aa-latest-slider">
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-2.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-2.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/t-shirt-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                </figure>
+                                                <figcaption>
+                                                    <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                                                    <span class="aa-product-price">$45.50</span>
+                                                </figcaption>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-3.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-4.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-4.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            </li>
+                                            <!-- start single product item -->
+                                            <li>
+                                                <figure>
+                                                    <a class="aa-product-img" href="#"><img src="img/women/girl-1.png" alt="polo shirt img"></a>
+                                                    <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                    <figcaption>
+                                                        <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                                                        <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="aa-product-hvr-content">
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                                                    <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                                                </div>
+                                                <!-- product badge -->
+                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                            </li>
+                                        </ul>
+                                        <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                    </div>
+                                    <!-- / latest product category -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / popular section -->
+        <!-- Support section -->
+        <section id="aa-support">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-support-area">
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="aa-support-single">
+                                    <span class="fa fa-truck"></span>
+                                    <h4>Thanh Toán</h4>
+                                    <P>An toàn và linh hoạt</P>
+                                    <P>Liên Kết với các tổ chức tài chính</P>
+                                </div>
+                            </div>
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="aa-support-single">
+                                    <span class="fa fa-clock-o"></span>
+                                    <h4>Đặt Tour</h4>
+                                    <P>Dễ dàng và nhanh chóng</P>
+                                    <p>Đặt tour chỉ với 3 bước</p>
+                                </div>
+                            </div>
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="aa-support-single">
+                                    <span class="fa fa-phone"></span>
+                                    <h4>Hỗ Trợ</h4>
+                                    <p>24/7</p>
+                                    <P>Hotline và hỗ trợ trực tuyến</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Support section -->
+      
+        <!-- Latest Blog -->
+        <section id="aa-latest-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-latest-blog-area">
+                            <h2>Địa Điểm Du Lịch Nổi Tiếng</h2>
+                            <div class="row">
+                                <!-- single latest blog -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="aa-latest-blog-single">
+                                        <figure class="aa-blog-img">
+                                            <a href="#">                                               
+                                                <img src="~/Content/NguoiDungCssLayout/img/Blog/sapa.jpg" />"" alt="img">
+                                            </a>
+                                            <figcaption class="aa-blog-img-caption">
+                                                <span href="#"><i class="fa fa-eye"></i>5K</span>
+                                                <a href="#"><i class="fa fa-thumbs-o-up"></i>1K5</a>
+                                                <a href="#"><i class="fa fa-comment-o"></i>225</a>
+                                                <span href="#"><i class="fa fa-clock-o"></i>June 10, 2019</span>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="aa-blog-info">
+                                            <h3 class="aa-blog-title"><a href="#">Sapa</a></h3>
+                                            <p>Nếu có thể dùng những từ ngắn gọn để miêu tả Sapa thì chỉ có thể là tuyệt đẹp, bí ẩn và trong lành. Giới thiệu một chút về Sapa, Sapa nằm ở phía tây bắc của Tổ quốc, thuộc huyện vùng cao của tỉnh Lào Cai. Là vùng đất được thiên nhiên ưu đãi cho núi rừng hùng vĩ, bí ẩn bởi toàn đồi núi được e nấp trong làn sương trắng mờ. Không khí cực kỳ mát mẻ, trong lành tinh khiết. Nếu đến Sapa trong mùa hoa mơ nở trắng xóa bạn phải ngỡ ngàng như đang lạc vào thiên đường.</p>
+                                            <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single latest blog -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="aa-latest-blog-single">
+                                        <figure class="aa-blog-img">
+                                            <a href="#">
+                                                <img src="~/Content/NguoiDungCssLayout/img/Blog/vinhhalong.jpg" />
+                                            </a>
+                                            <figcaption class="aa-blog-img-caption">
+                                                <span href="#"><i class="fa fa-eye"></i>5K3</span>
+                                                <a href="#"><i class="fa fa-thumbs-o-up"></i>1K8</a>
+                                                <a href="#"><i class="fa fa-comment-o"></i>322</a>
+                                                <span href="#"><i class="fa fa-clock-o"></i>June 10, 2019</span>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="aa-blog-info">
+                                            <h3 class="aa-blog-title"><a href="#">Vịnh Hạ Long</a></h3>
+                                            <p>Vịnh Hạ Long là địa điểm có thể nói là nổi tiếng nhất Việt Nam, bởi nó được công nhận là di sản văn hóa thế giới, bỏi nó  là tác phẩm nghệ thuật tạo hình kỳ lạ của tạo hóa, không khỏi khiến du khách thích thú nhưng cũng đầy bối rối. Đến với Hạ Long giúp bạn sẽ cảm nhận được những tác phẩm tạo hình tuyệt mỹ, tài hoa của tạo hoá, của thiên nhiên biến hàng ngàn đảo đá vô tri tĩnh lặng kia trở nên những tác phẩm điêu khắc.</p>
+                                            <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single latest blog -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="aa-latest-blog-single">
+                                        <figure class="aa-blog-img">
+                                            <a href="#">
+                                                <img src="~/Content/NguoiDungCssLayout/img/Blog/phongnha-kebang.jpg" />
+                                            </a>
+                                            <figcaption class="aa-blog-img-caption">
+                                                <span href="#"><i class="fa fa-eye"></i>4K6</span>
+                                                <a href="#"><i class="fa fa-thumbs-o-up"></i>1K4</a>
+                                                <a href="#"><i class="fa fa-comment-o"></i>278</a>
+                                                <span href="#"><i class="fa fa-clock-o"></i>June 10, 2019</span>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="aa-blog-info">
+                                            <h3 class="aa-blog-title"><a href="#">Động Phong Nha-Kẻ Bàng</a></h3>
+                                            <p>Liên hiệp quốc Unesco đã công nhận Vườn Quốc gia Phong Nha – Kẻ Bàng là Di sản thiên nhiên thế giới năm 2003. Động phong nha cũng tự hào là hang động được hiệp hội Hoàng gia An bình chọn là hang động đẹp nhất giới vì 7 tiêu chí sau: Hang động có cửa hang cao và rộng; có bãi cát, bãi đá ngầm đẹp nhất; có sông ngầm đẹp nhất; có hệ thống thạch nhũ kỳ ảo và tráng lệ nhất; có các hang khô cao và rộng; có Hồ nước ngầm sâu và đẹp; có nước dài nhất.</p>
+                                            <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Latest Blog -->
+        <!-- Client Brand -->
+        <section id="aa-client-brand">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-client-brand-area">
+                            <ul class="aa-client-brand-slider">
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh1.jpg" alt="java"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh2.jpg" alt="jquery"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh3.jpg" alt="html5"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh4.jpg" alt="css3"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh5.jpg" alt="wordPress"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh6.jpg" alt="joomla"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh7.jpg" alt="java"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh8.jpg" alt="jquery"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh9.jpg" alt="html5"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh10.jpg" alt="css3"></a></li>
+                                <li><a href="#"><img src="~/Content/NguoiDungCssLayout/img/flag/hinh11.jpg" alt="wordPress"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Client Brand -->      
+        <!-- footer -->
+        <footer id="aa-footer">
+            <!-- footer bottom -->
+            <div class="aa-footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="aa-footer-top-area">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="aa-footer-widget">
+                                            <h3>Tin Tức</h3>
+                                            <ul class="aa-footer-nav">
+                                                <li><a href="#">Bản tin du lịch Việt</a></li>
+                                                <li><a href="#">Góc báo chí du lịch Việt</a></li>
+                                                <li><a href="#">Cẩm nang du lịch</a></li>
+                                                <li><a href="#">Khám phá du lịch</a></li>
+                                                <li><a href="#">Kinh nghiệm du lịch</a></li>
+                                                <li><a href="#">Sự kiện du lịch</a></li>
+                                                <li><a href="#">Tư vấn du lịch</a></li>
+                                                <li><a href="#">tuyển dụng du lịch</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="aa-footer-widget">
+                                            <div class="aa-footer-widget">
+                                                <h3>Góc Khách Hàng</h3>
+                                                <ul class="aa-footer-nav">
+                                                    <li><a href="#">Quy tắc bảo hiểm</a></li>
+                                                    <li><a href="#">Điều kiện & Điều khoản</a></li>
+                                                    <li><a href="#">Chính sách bảo mật và thông tin khách hàng</a></li>
+                                                    <li><a href="#">Quyền riêng tư</a></li>
+                                                    <li><a href="#">Ý kiến khách hàng</a></li>
+                                                    <li><a href="#">Khách hàng thân thiết</a></li>
+                                                    <li><a href="#">Phương thức thanh toán</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="aa-footer-widget">
+                                            <div class="aa-footer-widget">
+                                                <h3>Liên kết hữu ích</h3>
+                                                <ul class="aa-footer-nav">
+                                                    <li><a href="#">Sơ đồ trang web</a></li>
+                                                    <li><a href="#">Tìm kiếm</a></li>
+                                                    <li><a href="#">Tìm kiếm nâng cao</a></li>
+                                                    <li><a href="#">Các nhà cung cấp</a></li>
+                                                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="aa-footer-widget">
+                                            <div class="aa-footer-widget">
+                                                <h3>Thông Tin Liên Hệ</h3>
+                                                <address>
+                                                    <p> 236 Phạm Văn Đồng,P.13,Q.Thủ Đức</p>
+                                                    <p><span class="fa fa-phone"></span>0385962262</p>
+                                                    <p><span class="fa fa-envelope"></span>lytankhanh151198@gmail.com</p>
+                                                </address>
+                                                <div class="aa-footer-social">
+                                                    <a href="#"><span class="fa fa-facebook"></span></a>
+                                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                                    <a href="#"><span class="fa fa-google-plus"></span></a>
+                                                    <a href="#"><span class="fa fa-youtube"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+            <div class="aa-footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="aa-footer-bottom-area">
+                                <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+                                <div class="aa-footer-payment">
+                                    <span class="fa fa-cc-mastercard"></span>
+                                    <span class="fa fa-cc-visa"></span>
+                                    <span class="fa fa-paypal"></span>
+                                    <span class="fa fa-cc-discover"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- / footer -->
+        <!-- Login Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4>Login or Register</h4>
+                        <form class="aa-login-form" action="">
+                            <label for="">Username or Email address<span>*</span></label>
+                            <input type="text" placeholder="Username or email">
+                            <label for="">Password<span>*</span></label>
+                            <input type="password" placeholder="Password">
+                            <button class="aa-browse-btn" type="submit">Login</button>
+                            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
+                            <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+                            <div class="aa-register-now">
+                                Don't have an account?<a href="account.html">Register now!</a>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="~/Content/NguoiDungCssLayout/js/bootstrap.js"></script>
+        <!-- SmartMenus jQuery plugin -->
+        <script type="text/javascript" src="~/Content/NguoiDungCssLayout/js/jquery.smartmenus.js"></script>
+        <!-- SmartMenus jQuery Bootstrap Addon -->
+        <script type="text/javascript" src="~/Content/NguoiDungCssLayout/js/jquery.smartmenus.bootstrap.js"></script>
+        <!-- To Slider JS -->
+        <script src="~/Content/NguoiDungCssLayout/js/sequence.js"></script>
+        <script src="~/Content/NguoiDungCssLayout/js/sequence-theme.modern-slide-in.js"></script>
+        <!-- Product view slider -->
+        <script type="text/javascript" src="~/Content/NguoiDungCssLayout/js/jquery.simpleGallery.js"></script>
+        <script type="text/javascript" src="~/Content/NguoiDungCssLayout/js/jquery.simpleLens.js"></script>
+        <!-- slick slider -->
+        <script type="text/javascript" src="~/Content/NguoiDungCssLayout/js/slick.js"></script>
+        <!-- Price picker slider -->
+        <script type="text/javascript" src="~/Content/NguoiDungCssLayout/js/nouislider.js"></script>
+        <!-- Custom js -->
+        <script src="~/Content/NguoiDungCssLayout/js/custom.js"></script>
+    </div>
+</body>
+
+</html>
